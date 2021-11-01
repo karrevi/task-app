@@ -1,0 +1,6 @@
+<span>LISTADO DE TAREAS</span>
+<div *ngFor="let item of listTask">
+  <h1>{{item.title}}</h1>
+  <h2>{{item.description}}</h2>
+</div>
+<h5 *ngIf="listTask.length == 0">No hay tareas para mostrar</h5>
